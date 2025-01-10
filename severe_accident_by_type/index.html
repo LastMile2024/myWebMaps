@@ -41,6 +41,16 @@
             padding: 0;
             margin: 0;
         }
+
+        /* Logo styling */
+        #map-logo {
+            position: absolute;
+            bottom: 10px; /* Adjust position from the bottom */
+            left: 10px;   /* Adjust position from the left */
+            width: 150px; /* Adjust logo size */
+            z-index: 1000; /* Ensures it appears above the map */
+            opacity: 0.9; /* Optional: Slight transparency */
+        }
         </style>
         <title></title>
     </head>
@@ -51,6 +61,10 @@
                 <div id="popup-content"></div>
             </div>
         </div>
+
+        <!-- Logo added here -->
+        <img src="LM - Horizontal - Blue.svg" id="map-logo" alt="Logo">
+
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
